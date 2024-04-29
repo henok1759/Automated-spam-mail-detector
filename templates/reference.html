@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/css/html.css">
+        <link rel="stylesheet" href="../static/css/index.css">
+    </head>
+    <body>
+       <div class="hero">
+        <div class="nav">
+            <ul class="nav">
+                <li class="nav" ><a  class="navv" href="{{ url_for('home')}}" >Home</a></li>
+              
+                <li class="nav" ><a  class="navv" href="{{ url_for('introduction')}}" >Introduction</a></li>
+                <li class="nav" ><a  class="navv" href="{{ url_for('backend')}}" >Backend</a></li>
+                <li class="nav" ><a  class="navv" href="{{ url_for('frontend')}}" >Frontend</a></li>
+                
+                <li class="nav" ><a  class="navv" href="{{ url_for('framework')}}" >Framework</a></li>
+            </ul>
+            </div>
+          
+           <div class="container">
+             <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+             </div>
+            <div class="testmonial">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                          <div class="user-text">
+                            <div class="txttitle"><h2 class="title">INTRODUCTION</h2></div>
+                          </div>
+                          <div class="user-img">
+                             <img src="../static/images/ref.png">
+                          </div>
+                    </div> 
+                    <div class="slide-col">
+                          <div class="user-text">
+                            <div class="txttitle"><h2 class="title">INTRODUCTION</h2></div>
+                          </div>
+                          <div class="user-img">
+                             <img src="../static/images/ref.png">
+                          </div>
+                    </div> 
+                    
+                    
+                </div>
+            </div>
+            
+           </div>
+
+           
+           
+       </div>
+       <script>
+          var btn = document.getElementsByClassName("btn");
+          var slide =document.getElementById("slide");
+
+          btn[0].onclick = function(){
+            slide.style.transform = "translateX(0px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+          }
+          btn[1].onclick = function(){
+            slide.style.transform = "translateX(-800px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+          }
+          
+
+       </script>
+    </body>
+</html>

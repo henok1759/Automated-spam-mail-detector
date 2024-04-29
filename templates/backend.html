@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/css/html.css">
+        <link rel="stylesheet" href="../static/css/index.css">
+    </head>
+    <body>
+       <div class="hero">
+        <div class="nav">
+            <ul class="nav">
+                <li class="nav" ><a  class="navv" href="{{ url_for('home')}}" >Home</a></li>
+                <li class="nav" ><a  class="navv" href="{{ url_for('introduction')}}" >Introduction</a></li>
+                <li class="nav" ><a  class="navv" href="{{ url_for('frontend')}}" >TECHNOLOGY CONT ...</a></li>
+                <li class="nav" ><a  class="navv" href="{{ url_for('framework')}}" >framework</a></li>
+                <li class="nav" ><a  class="navv" href="{{ url_for('reference')}}" >reference</a></li>
+            </ul>
+            </div>
+           
+           <div class="container">
+             <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+             </div>
+            <div class="testmonial">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                          <div class="user-text">
+                            <div class="txttitle"><h2 class="title">Technologies</h2></div>
+                            <ul>
+                              <li><p class="ppt">Technologies used :- 
+                                <ol>
+                                  <li>Python </li>
+                                  <li>HTML </li>
+                                  <li>CSS </li>
+                                  <li>Java Script </li>
+                                </ol>
+                                </p></li>
+                                <li><p class="ppt"><B>Python :-</B> is an interpreted, object-oriented, high-level programming language 
+                                  with dynamic semantics developed by Guido van Rossum</p></li>
+                                  <li><p class="ppt">Libraries:- 
+                                    <ol>
+                                      <li>Numpy </li>
+                                      <li> Pandas </li>
+                                      <li> Sklearn</li>
+                                      <li>NLTK</li>
+                                      <li>pickle</li>
+                                      <li>pytesseract</li>
+                                      <li>speech_recognition</li>
+                                      <li>PILK</li>
+                                      <li>re</li>
+                                      <li>warnings</li>
+                                    </ol>
+                                    </p></li>
+                            </ul>
+                          </div>
+                          <div class="user-img">
+                             <img src="../static/images/jup.jpg">
+                          </div>
+                    </div> 
+                    <div class="slide-col">
+                          <div class="user-text">
+                            <div class="txttitle"><h2 class="title">Libraries</h2></div>
+                            <ul class="in">
+                              <li><p class="ppt"><B>Numpy:-</B>is a library for the Python programming language.It is another useful component that makes Python as one of the favorite languages for 
+                                Data Science. It basically stands for Numerical Python and consists of multidimensional 
+                                array objects. By using NumPy, we can perform the following important operations:
+                                 <ul>
+                                  <li><p class="ppt">Mathematical and logical operations on arrays.
+                                  </p></li>
+                                  <li><p class="ppt">Fourier transformation
+                                  </p></li>
+                                 </ul>
+                                </p></li>
+                                <li><p class="ppt"><B>Pandas:-</B>It is another useful Python library that makes Python one of the favorite languages for 
+                                  Data Science. Pandas is basically used for data manipulation, wrangling and analysis. It 
+                                  was developed by Wes McKinney in 2008. With the help of Pandas, in data processing we 
+                                  can accomplish the following five steps:
+                                  <ul>
+                                    <li><p class="ppt"> Load
+                                    </p></li>
+                                    <li><p class="ppt"> Prepare
+                                    </p></li>
+                                    <li><p class="ppt"> Manipulate
+                                    </p></li>
+                                    <li><p class="ppt"> Analyze
+                                    </p></li>
+                                   </ul>
+                                  </p></li>
+                                 
+            
+                             
+                              
+
+                          </div>
+                          <div class="user-img">
+                             <img src="../static/images/jup.jpg">
+                          </div>
+                    </div> 
+                    
+                    
+                </div>
+            </div>
+            
+           </div>
+
+           
+           
+       </div>
+       <script>
+          var btn = document.getElementsByClassName("btn");
+          var slide =document.getElementById("slide");
+
+          btn[0].onclick = function(){
+            slide.style.transform = "translateX(0px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+          }
+          btn[1].onclick = function(){
+            slide.style.transform = "translateX(-800px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+          }
+          
+
+       </script>
+    </body>
+</html>

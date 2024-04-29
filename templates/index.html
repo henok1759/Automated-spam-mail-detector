@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <link rel="stylesheet" href="../static/css/index.css">
+      <link rel="stylesheet" href="../static/css/html.css">
+   </head>
+   <body>
+      <div class="hero">
+        <div class="nav">
+            <ul class="nav">
+                <li class="nav" ><a  class="nav" href="{{ url_for('home')}}" >Home</a></li>
+                <li class="nav"><a  class="na" href="{{ url_for('text')}}" >PREDICTION_PAGE</a></li>
+                <li class="nav"><a class="na" href="{{ url_for('about')}}" >DEVELOPERS</a></li>
+            </ul>
+        </div>
+        
+        <div class="container">
+          <div class="indicator">
+             <span class="btn active"></span>
+             <span class="btn"></span>
+          </div>
+         <div class="testmonial">
+             <div class="slide-row" id="slide">
+                 <div class="slide-col" id="homeo">
+                       <div class="user-text" id="homeo">
+                         
+                        
+                       </div>
+                       <div class="user-img">
+                          
+                       </div>
+                       
+                 </div> 
+                 
+                 <div class="slide-col">
+                       <div class="user-text">
+                         <h1>CONTENT</h1>
+                         <li class="con"><a class="con"    href="{{ url_for('introduction')}}" >INTRODUCTION</a></li>
+                         <li class="con"><a class="con"  href="{{ url_for('backend')}}" >Technologies</a></li>
+                         <li class="con"><a class="con" href="{{ url_for('frontend')}}" >Technologies Cont...</a></li>
+                         <li class="con"><a class="con"  href="{{ url_for('framework')}}" >FRAMEWORK</a></li>
+                         <li class="con"><a class="con"  href="{{ url_for('reference')}}" >REFERENCE</a></li>
+
+                       </div>
+                       <div class="user-img">
+                          <img src="../static/images/title.jpg">
+                       </div>
+                       
+                 </div> 
+                 
+                 
+             </div>
+         </div>
+         
+        </div>
+
+       <div class="listss">
+                        
+        <h3  class="tslider"> Technology<br> used</h3><img  class="newlist" src="../static/images/h1.png">
+                            <img id="newlist"  class="newlist" src="../static/images/c1.png">
+                                 <img id="newlist"  class="newlist" src="../static/images/j1.png"> 
+                                 <img id="newlist"  class="newlist" src="../static/images/jj1.jpg"> 
+                                    <img id="newlistp"  class="newlist p" src="../static/images/p1.png"> 
+                    </div>
+        <div class="pythond">
+                        
+        <h3  class="pythont"> Python<br> Modules</h3>
+                            <img id="newlist"  class="pyi" src="../static/images/ai/pa.png"> 
+                            <img  class="pyi" src="../static/images/ai/sci.png">
+                            <img id="newlist"  class="pyi" src="../static/images/ai/n.png">
+                            <img id="newlist"  class="pyi" src="../static/images/ai/sc.png"> 
+                            <img id="newlist"  class="pyi" src="../static/images/ai/pa.png"> 
+                            <img  class="pyi" src="../static/images/ai/sci.png">
+                            <img id="newlist"  class="pyi" src="../static/images/ai/n.png">
+                            <img id="newlist"  class="pyi" src="../static/images/ai/sc.png"> 
+                                
+                                   
+                    </div>
+        
+    </div>
+    
+    
+    <script>
+       var btn = document.getElementsByClassName("btn");
+       var slide =document.getElementById("slide");
+
+      btn[0].onclick = function(){
+         slide.style.transform = "translateX(0px)";
+         for(i=0;i<4;i++){
+             btn[i].classList.remove("active");
+         }
+         this.classList.add("active");
+       }
+      btn[1].onclick = function(){
+         slide.style.transform = "translateX(-800px)";
+         for(i=0;i<4;i++){
+             btn[i].classList.remove("active");
+         }
+         this.classList.add("active");
+       }
+       
+
+    </script>
+   
+    </body>
+</html>

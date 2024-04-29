@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/css/html.css">
+    </head>
+    <body>
+       <div class="hero">
+           <h1>testimonaials</h1>
+           <div class="container">
+             <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+             </div>
+            <div class="testmonial">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                          <div class="user-text">
+                            <h2>INTRODUCTION</h2>
+    <p>
+       This Machine Learning Project has based on <b>corpus</b>(textual) data.That used to detect the messages sent from someone else is <b>real</b> messages or <b>fake</b>(spam) messages.
+       <br>IT HAS:
+       <ul>
+           <li><B>Shape of corpus data :</B>Row=5572 and Column=2</li>
+           <li><B>Name of column:</B>
+               <ul>
+                   <li><B>Message:-</B>is a column name that contain a real and spam messages.</li>
+                   <li><B>Category:-</B>is a column name that contain two different text <b>spam</b> and <b>ham</b> </li>  
+               </ul>
+           </li>
+           <li><B>accuracy_on_training_data:</B>96.7%</li>
+           <li><B>accuracy_on_test_data:</B>96.5%</li>
+       </ul>  
+    </P>
+                          </div>
+                          <div class="user-img">
+                             <img src="../static/images/title.jpg">
+                          </div>
+                    </div> 
+                    <div class="slide-col">
+                          <div class="user-text">
+                            <p>
+                                This project has done:
+                                <ul>
+                                 <li><B>Python :</B>72.5%</li>
+                                 <ul>
+                                     <li>Python:-is used in backend side</li>
+                                     
+                                 </ul>
+                                 <li><B>HTML:</B>12.3%</li>
+                                 <li><B>JavaScript :</B>12.3%</li>
+                                 <li><B>CSS :</B>2.9%</li>
+                                 <ul>
+                                     <li>HTML,CSS and JAVASCRIPT:-is used in Frontend side</li>
+                                     
+                                 </ul>
+                              </ul>  
+                              </P>
+                          </div>
+                          <div class="user-img">
+                             <img src="../static/images/title.jpg">
+                          </div>
+                    </div> 
+                    <div class="slide-col">
+                          <div class="user-text">
+                            <p>
+                                I will look into python packages such as:
+                                <ul>
+                                    <li><B>numpy</B></li>
+                                    <li><B>pandas</B></li>
+                                    <li><B>sklearn</B></li>
+                                    <ul>
+                                        <li><B>train_test_split</B></li>
+                                        <li><B>TfidfVectorizer</B></li>
+                                        <li><B>LogisticRegression</B></li>
+                                        <li><B>accuracy_score</B></li>
+                                    </ul>
+                                </ul>
+                              </P>
+                          </div>
+                          <div class="user-img">
+                             <img src="../static/images/title.jpg">
+                          </div>
+                    </div> 
+                    <div class="slide-col">
+                          <div class="user-text">
+                            <p>jhgjhgjbhgjhkgjhghbjhgbfhgfvhgghfbhghggffgghgjhjhhhbfgghgfbbhgfhgfbhfgjhfggbjhgjhgjhgjhjhgejrjksdhfsjkfasdjkgfcjhyujbcdgscdjhcfgyjhcdbgjchdfguyhjd</p>
+                          </div>
+                          <div class="user-img">
+                             <img src="../static/images/title.jpg">
+                          </div>
+                    </div> 
+                    
+                </div>
+            </div>
+            
+           </div>
+
+           
+           
+       </div>
+       <script>
+          var btn = document.getElementsByClassName("btn");
+          var slide =document.getElementById("slide");
+
+          btn[0].onclick = function(){
+            slide.style.transform = "translateX(0px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+          }
+          btn[1].onclick = function(){
+            slide.style.transform = "translateX(-800px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+          }
+          btn[2].onclick = function(){
+            slide.style.transform = "translateX(-1600px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+          }
+          btn[3].onclick = function(){
+            slide.style.transform = "translateX(-2400px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+          }
+
+       </script>
+    </body>
+</html>

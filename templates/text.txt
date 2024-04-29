@@ -1,0 +1,145 @@
+<div class="box1">
+    <h2>INTRODUCTION</h2>
+    <p>
+       This Machine Learning Project has based on <b>corpus</b>(textual) data.That used to detect the messages sent from someone else is <b>real</b> messages or <b>fake</b>(spam) messages.
+       <br>IT HAS:
+       <ul>
+           <li><B>Shape of corpus data :</B>Row=5572 and Column=2</li>
+           <li><B>Name of column:</B>
+               <ul>
+                   <li><B>Message:-</B>is a column name that contain a real and spam messages.</li>
+                   <li><B>Category:-</B>is a column name that contain two different text <b>spam</b> and <b>ham</b> </li>  
+               </ul>
+           </li>
+           <li><B>accuracy_on_training_data:</B>96.7%</li>
+           <li><B>accuracy_on_test_data:</B>96.5%</li>
+       </ul>  
+    </P>
+</div>
+<div class="box1">
+<p>
+  This project has done:
+  <ul>
+   <li><B>Python :</B>72.5%</li>
+   <ul>
+       <li>Python:-is used in backend side</li>
+       
+   </ul>
+   <li><B>HTML:</B>12.3%</li>
+   <li><B>JavaScript :</B>12.3%</li>
+   <li><B>CSS :</B>2.9%</li>
+   <ul>
+       <li>HTML,CSS and JAVASCRIPT:-is used in Frontend side</li>
+       
+   </ul>
+</ul>  
+</P>
+</div>
+<div class="box1">
+<p>
+   I will look into python packages such as:
+   <ul>
+       <li><B>numpy</B></li>
+       <li><B>pandas</B></li>
+       <li><B>sklearn</B></li>
+       <ul>
+           <li><B>train_test_split</B></li>
+           <li><B>TfidfVectorizer</B></li>
+           <li><B>LogisticRegression</B></li>
+           <li><B>accuracy_score</B></li>
+       </ul>
+   </ul>
+ </P>
+</div>
+<div class="box1">
+<p>
+<B>NUMPY<B>
+   <ul>
+       <li>Is one of the python packages used to</li>
+       
+   </ul> 
+</p>
+</div>
+<div class="box1">
+<p>
+ <B>PANDAS<B>
+     <ul>
+         <li>Is one of the python packages used to</li>
+         
+     </ul> 
+</p>
+</div>
+<div class="box1">
+<p>
+ <B>SKLEARN<B>
+     <ul>
+         <li>Is one of the python packages used to</li>
+         <ul>
+           <B>train_test_split<B>
+           <li></li>
+           <B>TfidfVectorizer<B>
+           <li></li>
+           <B>LogisticRegression</B>
+           <li></li>
+           <B>accuracy_score</B>
+           <li></li>
+       </ul>
+     </ul> 
+</p>
+</div>
+<div class="box1">
+<p>
+ <B>PANDAS<B>
+     <ul>
+         <li>Is one of the python packages used to</li>
+         
+     </ul> 
+</p>
+</div>
+<div class="box1">
+<p>
+ From python framework I used <br>
+ <B>FLASK</B>
+ <ul>
+   <li>Is one of python framework used to connectr backend to front end </li>
+ </ul>
+</p>
+</div>
+
+
+
+
+<div class="slide_col">
+    <div class="text">
+         <p>jkfsdhfjksdhgkjdfghdfjkghkjdnjvjhkvjnkvjhkvjh</p>
+    </div>
+    <div class="image">
+        <img src="../static/images/back.png">
+    </div>
+</div>
+
+
+
+
+<div class="student2">
+    <img  class="student" src="../static/images/best.png">
+    <div class="title_con">
+        <p class="id_fill">NAME:<b>_Biruk Yehualashet</b></p>
+        <p class="id_fill">STREAM:<b>____Computer___</b> </p>
+        <p class="id_fill">ID_No:<b>____RU1369/12____</b></p>
+        <img  class="qr" src="../static/images/qr.svg">
+        
+    </div>
+</div>
+<div class="student3">
+    <img  class="student" src="../static/images/best.png">
+    <div class="title_con">
+        <p class="id_fill">NAME:<b>_Daniel Gashaw</b></p>
+        <p class="id_fill">STREAM:<b>____Computer___</b> </p>
+        <p class="id_fill">ID_No:<b>____RU1000/12____</b></p>
+        <img  class="qr" src="../static/images/qr.svg">
+        
+        
+    </div>
+
+</div>

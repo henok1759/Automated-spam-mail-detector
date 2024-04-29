@@ -1,0 +1,44 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+	<link rel="stylesheet" type="text/css" href="../static/css/result.css">
+	<link rel="stylesheet" href="../static/css/text.css">
+	<link rel="stylesheet" href="../static/css/style1.css">
+	
+</head>
+<body>
+	<div class="nav">
+		<ul class="nav">
+			<li class="nav" ><a class="na" href="{{ url_for('home')}}" >BACK_TO_HOME</a></li>
+			<li class="nav"><a class="na" href="{{ url_for('text')}}" >BACK_TO_PREVIOUS_PAGE</a></li>
+		</ul>
+	</div>
+<header>
+	<div class="container">
+		<div id="brandname">
+			ML App
+		</div>
+		<h2>Spam Detector For SMS Messages</h2>
+		<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<div class="results">
+
+
+		
+	{% if prediction == 1%}
+	<h2 style="color:red;">Spam</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:blue;">Not a Spam (It is a Ham)</h2>
+	{% endif %}
+
+	</div>
+	</div>
+</header>
+	
+
+</body>
+</html>

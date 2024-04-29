@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/css/html.css">
+        <link rel="stylesheet" href="../static/css/index.css">
+    </head>
+    <body>
+       <div class="hero">
+        <div class="nav">
+            <ul class="nav">
+                <li class="nav" ><a  class="navv" href="{{ url_for('home')}}" >Home</a></li>
+                <li class="nav" ><a  class="navv" href="{{ url_for('backend')}}" >TECHNOLOGY</a></li>
+                <li class="nav" ><a  class="navv" href="{{ url_for('frontend')}}" >TECHNOLOGY CONT ...</a></li>
+                <li class="nav" ><a  class="navv" href="{{ url_for('framework')}}" >framework</a></li>
+                <li class="nav" ><a  class="navv" href="{{ url_for('reference')}}" >reference</a></li>
+            </ul>
+            </div>
+          
+           <div class="container">
+             <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+             </div>
+            <div class="testmonial">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                          <div class="user-text">
+                            <div class="txttitle"><h2 class="title">INTRODUCTION</h2></div>
+                            <ul>
+                              <li><p class="ppt">In today’s globalized world, email is a primary source of communication. This
+                                communication can vary from personal, business, corporate to government. With the rapid
+                                increase in email usage, there has also been increase in the SPAM emails. SPAM emails, also
+                                known as junk email involves nearly identical messages sent to numerous recipients by
+                                email. Apart from being annoying, spam emails can also pose a security threat to computer
+                                system.  In this
+                                project, we use text mining to perform automatic spam filtering to use emails effectively. We
+                                try to identify patterns using Data-mining classification algorithms to enable us classify the
+                                emails as HAM or SPAM
+                                </p></li>
+                                <li><p class="ppt">This project is accept three types of inputs 
+                                  <ol>
+                                    <li>Text type </li>
+                                    <li>Pictures type </li>
+                                    <li>Audio(.wpa) type </li>
+                                  </ol>
+                                  </p></li>
+                              
+                            </ul>
+                            
+                          </div>
+                          <div class="user-img">
+                             <img src="../static/images/AI.jpg">
+                          </div>
+                    </div> 
+                    <div class="slide-col">
+                          <div class="user-text">
+                            <div class="txttitle"><h2 class="title">INTRODUCTION</h2></div>
+                            <p class="ppt">Sample of data set</p>
+                            <table>
+                              <tr>
+                                <td class="head"><p class="ppt">label	</p></td>
+                                <td class="head"><p class="ppt">message</p></td>
+                              </tr>
+                              <tr>
+                                <td><p class="ppt">ham</p></td>
+                                <td><p class="ppt">Go until jurong point, crazy.. Available only ...</p></td>
+                              </tr>
+                              <tr>
+                                <td><p class="ppt">ham</p></td>
+                                <td><p class="ppt">Ok lar... Joking wif u oni...</p></td>
+                              </tr><tr>
+                                <td><p class="ppt">spam</p></td>
+                                <td><p class="ppt">Free entry in 2 a wkly comp to win FA Cup fina...</p></td>
+                              </tr>
+                            </table>
+                          </div>
+                          <div class="user-img">
+                             <img src="../static/images/AI2.png">
+                          </div>
+                    </div> 
+                    
+                    
+                </div>
+            </div>
+            
+           </div>
+
+           
+           
+       </div>
+       <script>
+          var btn = document.getElementsByClassName("btn");
+          var slide =document.getElementById("slide");
+
+          btn[0].onclick = function(){
+            slide.style.transform = "translateX(0px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+          }
+          btn[1].onclick = function(){
+            slide.style.transform = "translateX(-800px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+          }
+          
+
+       </script>
+    </body>
+</html>

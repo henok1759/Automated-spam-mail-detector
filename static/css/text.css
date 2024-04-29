@@ -1,0 +1,21 @@
+a.nav{
+    background: transparent;
+    border: solid brown;
+    border-radius: 5px;
+   padding: 5px 10px;
+    color: brown;
+}
+a.na{
+    background: transparent;
+    border: solid black;
+    border-radius: 5px;
+   padding: 5px 10px;
+   color: black;
+}
+a.na:hover{
+    background: transparent;
+    border: solid brown;
+    border-radius: 5px;
+   padding: 5px 10px;
+   color: brown;
+}
